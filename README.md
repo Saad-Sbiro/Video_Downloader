@@ -4,7 +4,7 @@ A powerful online tool that allows users to download videos from YouTube, Facebo
 
 ## Key Features
 - Supports video downloading from *YouTube, **Facebook, and **Instagram*
-- Offers multiple formats: MP4, MP3, WebM, etc.
+- Offers multiple formats: MP4, MP3, etc soon.
 - Converts and processes media using *yt-dlp* and *ffmpeg*
 - Clean, responsive UI and fast performance
 - Fully functional via a web interface – no need to install anything
