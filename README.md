@@ -11,10 +11,10 @@ A powerful online tool that allows users to download videos from YouTube, Facebo
 
 ## Technologies Used
 - Frontend: HTML, CSS, JavaScript
-- Backend: Python with yt-dlp and ffmpeg
+- Backend: PHP and Python libraries (yt-dlp and ffmpeg)
 
 ## Live Demo
-Try it here: [https://رابط_الموقع_ديالك](https://رابط_الموقع_ديالك)
+Try it here: [https://mypick.site/](https://mypick.site/)
 
 ## Note
 This project is intended for educational purposes only.
