@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download YouTube, Facebook & Instagram Videos Free</title>
+
+    <link rel="icon" href="images/image.png" type="image/png" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+
+    <meta
+      name="description"
+      content="Easily download videos from YouTube, Facebook, and Instagram in HD MP4 format. No ads, no watermark, and no sign-up required!"
+    />
+
+    <meta
+      name="keywords"
+      content="YouTube video downloader, Facebook video downloader, Instagram video downloader, download YouTube videos MP4, download Facebook videos HD, download Instagram reels, no ads video downloader, save videos online free"
+    />
+
+    <meta name="author" content="Saad Sbiro" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Free Video Downloader - YouTube, Facebook & Instagram"
+    />
+
+    <meta
+      property="og:description"
+      content="Fast and easy downloader for YouTube, Facebook, and Instagram to save videos in MP4 format without watermark and no ads."
+    />
+    <meta property="og:image" content="images/image.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mypick.site" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body>
+    <div id="notification" class="notification">
+      <p>تنبيه: صاحب هذا الموقع غير مسؤول عن أي استخدام غير شرعي أو محرم للموقع </p>
+      <button onclick="closeNotification()">x</button>
+    </div>
+    <header>
+      <div class="container2">
+        <h1 id="logo">
+          Free Downloader <br />No Ads
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <form action="download.php" method="POST">
+          <div class="pla">
+            <label for="quality" class="label1">
+              Select platform:</label
+            ><br />
+
+            <button
+              class="btnn clicked"
+              type="button"
+              data-placeholder="Paste YouTube link here"
+              onclick="changeColor(this)"
+            >
+              YouTube <i class="fa fa-youtube-play"></i>
+            </button>
+            <button
+              class="btnn facebookBtn"
+              type="button"
+              data-placeholder="Paste Facebook link here"
+              onclick="changeColor(this)"
+            >
+              Facebook <i class="fa fa-facebook-f"></i>
+            </button>
+            <button
+              class="btnn instagramBtn"
+              type="button"
+              data-placeholder="Paste Instagram link here"
+              onclick="changeColor(this)"
+            >
+              Instagram <i class="fa fa-instagram"></i></button
+            ><br />
+          </div>
+          <input
+            type="text"
+            name="url"
+            id="urlInput"
+            placeholder="Paste YouTube link here"
+            required
+          />
+          <input
+            type="hidden"
+            name="platform"
+            id="platformInput"
+            value="youtube"
+          />
+
+          <label
+            for="quality"
+            style="font-size: 1.1rem; color: #fff; margin-bottom: 10px"
+          >
+            Select Format & Quality:
+          </label>
+          <select name="quality" id="quality" required>
+            <option value="bestaudio">🎵 Audio Only (MP3)</option>
+            <option value="18">📹 360p (MP4)</option>
+            <option value="136+140">📹 720p (Best Video+Audio)</option>
+            <option value="137+140">📹 1080p (Best Video+Audio)</option>
+          </select>
+
+          <div class="center-button">
+            <button class="Btn" aria-label="Download YouTube video">
+              <svg
+                class="svgIcon"
+                viewBox="0 0 384 512"
+                height="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                ></path>
+              </svg>
+              <span class="icon2"></span>
+              <span class="tooltip">Download</span>
+            </button>
+          </div>
+
+          <div id="progressBox" style="display: none">
+            <p class="statut">
+              Downloading... <span id="fakePercent" class="statut">0%</span>
+            </p>
+            <div style="width: 100%; background: #ccc; border-radius: 30px">
+              <div
+                id="fakeBar"
+                style="
+                  width: 0%;
+                  height: 20px;
+                  background: #00a2ff;
+                  border-radius: 30px;
+                "
+              ></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer
+      style="text-align: center; color: white; padding: 10px; font-size: 0.9rem"
+    >
+      <p>&copy; 2025 Sbiro Downloader. All rights reserved.</p>
+    </footer>
+
+    <section>
+      <div class="section-wrapper">
+        <div class="section-text">
+          <h2>Video downloader</h2>
+          <p>
+            Sbiro Downloader is a free and fast online tool that allows you to
+            download videos and audio from YouTube, Facebook, and Instagram in
+            high quality. No sign-up required, no annoying ads just clean,
+            efficient downloading.
+          </p>
+        </div>
+        <div class="section-image">
+          <img
+            src="images/image1.webp"
+            loading="lazy"
+            alt="About Sbiro Downloader"
+            width="100%"
+            height="auto"
+          />
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="section-wrapper reverse">
+        <div class="section-text">
+          <h2>Social media vedio download</h2>
+          <ul>
+            <li>✔️ Download videos in MP4 and audio in MP3 format</li>
+            <li>✔️ Supports multiple resolutions: 360p, 720p, 1080p</li>
+            <li>✔️ Works seamlessly on desktop and mobile devices</li>
+            <li>✔️ Fast conversion with no popups or malware</li>
+          </ul>
+        </div>
+        <div class="section-image">
+          <img
+            src="images/image2.webp"
+            loading="lazy"
+            alt="Features"
+            width="100%"
+            height="auto"
+          />
+        </div>
+      </div>
+
+      <!-- How to Use -->
+      <div class="section-wrapper">
+        <div class="section-text">
+          <h2>How to Use</h2>
+          <p>
+            Using Sbiro Downloader is simple: copy the video URL from YouTube,
+            Facebook, or Instagram, paste it into the input box, choose your
+            desired format and quality, then hit "Download". That's it.
+          </p>
+        </div>
+        <div class="section-image">
+          <img
+            src="images/image3.webp"
+            loading="lazy"
+            alt="How it works"
+            width="100%"
+            height="auto"
+          />
+        </div>
+      </div>
+
+      <!-- Supported Platforms -->
+      <div class="section-wrapper reverse">
+        <div class="section-text">
+          <h2>Supported Platforms</h2>
+          <p>
+            Currently, Sbiro Downloader supports content from YouTube, Facebook,
+            and Instagram. We're working on supporting TikTok, Twitter, and more
+            in the near future.
+          </p>
+        </div>
+        <div class="section-image">
+          <img
+            src="images/image4.webp"
+            loading="lazy"
+            alt="Supported Platforms"
+            width="100%"
+            height="auto"
+          />
+        </div>
+      </div>
+
+      <!-- Legal Info -->
+      <div class="section-wrapper">
+        <div class="section-text">
+          <h2>Legal Information</h2>
+          <p>
+            Sbiro Downloader is intended for personal use only. Downloading
+            copyrighted content without permission may violate the terms of
+            service of the original platform. Always respect content creators'
+            rights.
+          </p>
+        </div>
+        <div class="section-image">
+          <img
+            src="images/image5.webp"
+            loading="lazy"
+            alt="Legal Disclaimer"
+            width="100%"
+            height="auto"
+          />
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="section-wrapper reverse">
+        <div class="section-text">
+          <h2>Frequently Asked Questions</h2>
+          <p><strong>Do I need to install anything?</strong> No.</p>
+          <p><strong>Can I download playlists?</strong> Not yet.</p>
+          <p><strong>Is this free forever?</strong> Yes.</p>
+        </div>
+        <div class="section-image">
+          <img
+            src="images/image6.webp"
+            loading="lazy"
+            alt="FAQs"
+            width="100%"
+            height="auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
