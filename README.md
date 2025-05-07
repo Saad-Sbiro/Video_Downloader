@@ -2,6 +2,19 @@
 
 A powerful online tool that allows users to download videos from YouTube, Facebook, and Instagram in multiple formats and qualities.
 
+## Requirements
+
+- Python 3.8+
+- PHP & a local server (e.g. XAMPP)
+- yt-dlp
+- ffmpeg
+
+### Installation
+
+```bash
+pip install yt-dlp
+sudo apt install ffmpeg
+
 ## Key Features
 - Supports video downloading from *YouTube, **Facebook, and **Instagram*
 - Offers multiple formats: MP4, MP3, etc soon.
