@@ -16,7 +16,7 @@ pip install yt-dlp
 sudo apt install ffmpeg
 ```
 ## Key Features
-- Supports video downloading from *YouTube, **Facebook, and **Instagram*
+- Supports video downloading from *YouTube*, *Facebook*, and *Instagram*
 - Offers multiple formats: MP4, MP3, etc soon.
 - Converts and processes media using *yt-dlp* and *ffmpeg*
 - Clean, responsive UI and fast performance
